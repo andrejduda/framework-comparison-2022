@@ -85,21 +85,36 @@ Measured on: AMD Ryzen 7 3700X 8-Core Processor, 48 GB RAM
 
 Used JMeter, 100 threads (users) with ramp-up period 1 second, 10 000 requests (1 000 000 requests total)
 
-| **Label** | **Throughput (req/sec)** | **Min** | **Max** | **99% Line** | **Avg** | **% Perf** |
-| --- | --- | --- | --- | --- | --- | --- |
-| Netty 1st run | 82,856.906 | 0 | 478 | 2 | 83,658.489 | 100% |
-| Netty 2nd run | 83,257.014 | 0 | 179 | 2 |
-| Netty 80MB 1st run | 82,624.143 | 0 | 338 | 2 |
-| Netty 80MB 2nd run | 85,895.894 | 0 | 125 | 2 |
-| Spring 1st run | 51,829.584 | 0 | 358 | 11 | 55,905.438 | 66.83% |
-| Spring 2nd run | 61,489.270 | 0 | 192 | 11 |
-| Spring 80MB 1st run | 51,064.699 | 0 | 327 | 14 |
-| Spring 80MB 2nd run | 59,238.197 | 0 | 128 | 6 |
-| Quarkus 1st run | 65,053.344 | 0 | 619 | 21 | 72,426.200 | 86.57% |
-| Quarkus 2nd run | 77,184.316 | 0 | 224 | 2 |
-| Quarkus 80MB 1st run | 70,175.439 | 0 | 857 | 10 |
-| Quarkus 80MB 2nd run | 77,291.699 | 0 | 221 | 2 |
-| Micronaut 1st run | 61,709.349 | 0 | 603 | 6 | 69,689.849 | 83.30% |
-| Micronaut 2nd run | 78,585.462 | 0 | 193 | 2 |
-| Micronaut 80MB 1st run | 61,387.354 | 0 | 794 | 7 |
-| Micronaut 80MB 2nd run | 77,077.231 | 0 | 161 | 3 |
+<table>
+    <thead><tr><th>Label</th><th>Throughput (req/sec)</th><th>Min</th><th>Max</th><th>99% Line</th><th>Avg</th><th>% Perf</th></tr></thead>
+    <tbody>
+        <tr>
+            <td>Netty 1st run</td><td>82,856.906</td><td>0</td><td>478</td><td>2</td>
+            <td rowspan=4>83,658.489</td><td rowspan=4>100%</td>
+        </tr>
+        <tr><td>Netty 2nd run</td><td>83,257.014</td><td>0</td><td>179</td><td>2</td></tr>
+        <tr><td>Netty 80MB 1st run</td><td>82,624.143</td><td>0</td><td>338</td><td>2</td></tr>
+        <tr><td>Netty 80MB 2nd run</td><td>85,895.894</td><td>0</td><td>125</td><td>2</td></tr>
+        <tr>
+            <td>Spring 1st run</td><td>51,829.584</td><td>0</td><td>358</td><td>11</td>
+            <td rowspan=4>55,905.438</td><td rowspan=4>66.83%</td>
+        </tr>
+        <tr><td>Spring 2nd run</td><td>61,489.270</td><td>0</td><td>192</td><td>11</td></tr>
+        <tr><td>Spring 80MB 1st run</td><td>51,064.699</td><td>0</td><td>327</td><td>14</td></tr>
+        <tr><td>Spring 80MB 2nd run</td><td>59,238.197</td><td>0</td><td>128</td><td>6</td></tr>
+        <tr>
+            <td>Quarkus 1st run</td><td>65,053.344</td><td>0</td><td>619</td><td>21</td>
+            <td rowspan=4>72,426.200</td><td rowspan=4>86.57%</td>
+        </tr>
+        <tr><td>Quarkus 2nd run</td><td>77,184.316</td><td>0</td><td>224</td><td>2</td></tr>
+        <tr><td>Quarkus 80MB 1st run</td><td>70,175.439</td><td>0</td><td>857</td><td>10</td></tr>
+        <tr><td>Quarkus 80MB 2nd run</td><td>77,291.699</td><td>0</td><td>221</td><td>2</td></tr>
+        <tr>
+            <td>Micronaut 1st run</td><td>61,709.349</td><td>0</td><td>603</td><td>6</td>
+            <td rowspan=4>69,689.849</td><td rowspan=4>83.30%</td>
+        </tr>
+        <tr><td>Micronaut 2nd run</td><td>78,585.462</td><td>0</td><td>193</td><td>2</td></tr>
+        <tr><td>Micronaut 80MB 1st run</td><td>61,387.354</td><td>0</td><td>794</td><td>7</td></tr>
+        <tr><td>Micronaut 80MB 2nd run</td><td>77,077.231</td><td>0</td><td>161</td><td>3</td></tr>
+    </tbody>
+</table>
