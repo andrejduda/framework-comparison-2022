@@ -12,7 +12,7 @@ Just what project generators can give you when you start project.
 3. Micronaut (3.6.1) used: [Micronaut Launch](https://micronaut.io/launch/)
 4. Basic pure Netty implementation (Netty 4.1.80.Final)
 
-Java used for compilation and runtime: Zulu OpenJDK 17.0.2
+Java used for compilation and runtime: [Azul Zulu JDK 17.0.2](https://www.azul.com/downloads/?version=java-17-lts&os=windows&architecture=x86-64-bit&package=jdk)
 
 ## Implementation specifics:
 
