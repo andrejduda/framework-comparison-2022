@@ -1,10 +1,15 @@
 # Framework comparison 2022
 
+## Summary:
+Comparison of simple implementation of REST endpoint using different frameworks.
+Without any performance tweaking.
+Just what project generators can give you when you start project.
+
 ## Compared frameworks:
 
-1. SpringBoot (2.7.3)
-2. Quarkus (2.11.3.Final)
-3. Micronaut (3.6.1)
+1. SpringBoot (2.7.3) used: [Spring Initializr](https://start.spring.io/)
+2. Quarkus (2.11.3.Final) used: [Quarkus Starter](https://code.quarkus.io/)
+3. Micronaut (3.6.1) used: [Micronaut Launch](https://micronaut.io/launch/)
 4. Basic pure Netty implementation (Netty 4.1.80.Final)
 
 Java used for compilation and runtime: Zulu OpenJDK 17.0.2
