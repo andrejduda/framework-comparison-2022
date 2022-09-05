@@ -10,6 +10,7 @@ public class MessageService {
     }
 
     public Mono<String> sayHello(String name) {
-        return Mono.just(message + " " + name);
+        var text = message + " " + name;
+        return Mono.just(text);
     }
 }
