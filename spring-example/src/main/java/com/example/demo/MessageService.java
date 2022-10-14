@@ -1,5 +1,7 @@
 package com.example.demo;
 
+import reactor.core.publisher.Mono;
+
 public class MessageService {
     private final String message;
 
@@ -7,7 +9,8 @@ public class MessageService {
         this.message = message;
     }
 
-    public String sayHello(String name) {
-        return message + " " + name;
+    public Mono<String> sayHello(String name) {
+        var text = message + " " + name;
+        return Mono.just(text);
     }
 }

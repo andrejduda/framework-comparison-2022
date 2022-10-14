@@ -7,6 +7,7 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
+import reactor.core.publisher.Mono;
 
 import javax.validation.constraints.NotBlank;
 
@@ -21,7 +22,7 @@ public class MessageController {
     }
 
     @GetMapping(value = "/hello/{name}", produces = MediaType.TEXT_PLAIN_VALUE)
-    String hello(@NotBlank @PathVariable("name") String name) {
+    Mono<String> hello(@NotBlank @PathVariable("name") String name) {
         return messageService.sayHello(name);
     }
 }
